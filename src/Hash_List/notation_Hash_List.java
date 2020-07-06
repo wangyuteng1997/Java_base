@@ -8,6 +8,7 @@ import java.util.*;
  */
 public class notation_Hash_List {
     public static void main(String[] args) {
+
         // 1. initialize the hash set
         HashSet<String> hashSet = new HashSet<String>();
 
