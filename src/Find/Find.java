@@ -36,10 +36,11 @@ import java.util.regex.Pattern;
 
         public void test2() {
             String str = "wqdwd wdwdwiii";
-            Pattern p = Pattern.compile("w.*i");
-//           这里a.*b 表示匹配以a开始b结束的中间任意长度的字符串  *代表零或者多次
+//            Pattern p = Pattern.compile("w.q");
+////           这里a.*b 表示匹配以a开始b结束的中间任意长度的字符串  *代表零或者多次
 
-//            Pattern p = Pattern.compile("(^[0-9]+)(.*)");
+
+          Pattern p = Pattern.compile("(^[0-9]+)(.*)");
             //得到匹配器 匹配两个部分 第一个部分是0-9的一串数字 第二个是多个除了/n/r的字符
             Matcher m = p.matcher(str);
             boolean bFound = m.find();
