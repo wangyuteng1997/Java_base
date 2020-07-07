@@ -44,7 +44,7 @@ public class notation_Hash_List {
 
          */
         while (entries.hasNext()) {
-            Map.Entry entry = (Map.Entry) entries.next();
+            Map.Entry entry = entries.next();
             String key = (String) entry.getKey();
             String value = (String) entry.getValue();
             System.out.println("Key = " + key + ", Value = " + value);
