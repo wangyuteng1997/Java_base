@@ -6,7 +6,12 @@ import java.util.*;
  * @author wang yuteng
  * @data 2020/7/6 13:47
  */
-public class notation_Hash_List {
+
+/**
+* Collection是最基本集合接口，它定义了一组允许重复的对象。Collection接口派生了两个子接口Set(Hashset)和List(Linklist和ArrayList)
+*Map接口下含有HashMap和TreeMap
+* */
+public class notation_Hash_and_List {
     public static void main(String[] args) {
 
         // 1. initialize the hash set
@@ -25,7 +30,8 @@ public class notation_Hash_List {
 
 
 
-        HashMap<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
+//      HashMap<String, String> map = new HashMap<>(); 因为hashmap承继于Map接口
         map.put("1", "1");
         map.put("2", "2");
         map.put("3", "3");
@@ -52,6 +58,7 @@ public class notation_Hash_List {
 
 
         Hashtable<String, String> table = new Hashtable<String, String>();
+//      Dictionary<String, String> table = new Hashtable<String, String>(); 因为Hashtable继承于Dictionary接口
         table.put("1", "1");
         table.put("2", "2");
         table.remove("1");
@@ -59,7 +66,8 @@ public class notation_Hash_List {
         System.out.println(table);
 
 
-        List<Integer> array = new ArrayList<Integer>();
+        ArrayList<Integer> array = new ArrayList<Integer>();
+//      List<Integer> array = new ArrayList<Integer>(); 因为ArrayList继承于List接口继承于Collection
         array.add(1);
         array.add(2);
         array.add(3);
@@ -78,12 +86,20 @@ public class notation_Hash_List {
 //        }
 
         List<String> linked = new LinkedList<>();
-//        List<String> linked = new LinkedList<String>(); 后面String 有没有都可以
+//       List<String> linked = new LinkedList<String>(); 后面String 有没有都可以
         linked.add("first");
         linked.add("second");
         linked.add("third");
         String A = linked.get(1);
         System.out.println(A);
+
+//   ArrayList的所有数据是在同一个地址上,而LinkedList的每个数据都拥有自己的地址.所以在对数据进行查找的时候
+//   由于LinkedList的每个数据地址不一样，get数据的时候ArrayList的速度会优于LinkedList，而更新数据的时候，
+//   虽然都是通过循环循环到指定节点修改数据，但LinkedList的查询速度已经是慢的，而且对于LinkedList而言，
+//   更新数据时不像ArrayList只需要找到对应下标更新就好，LinkedList需要修改指针，速率不言而喻
+
+
+
 
 
         int[] arrary1 = new int[]{1, 2, 3};

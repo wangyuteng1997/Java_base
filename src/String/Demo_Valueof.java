@@ -10,12 +10,11 @@ public class Demo_Valueof {
         char b = 'a';
         double c = 2.2;
 
-// 使用toString方法，但是只能够对对象进行操作
-        Integer A = a;
-        String s2 = A.toString();
-
-
         String s = String.valueOf(a);
         String s1 = String.valueOf(b);
+
+        // 使用toString方法，但是只能够对对象进行操作
+        Integer A = a;
+        String s2 = A.toString();
     }
 }
