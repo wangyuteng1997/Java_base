@@ -5,6 +5,18 @@ package Static;
  * @data 2020/7/7 18:37
  */
 public class student {
+    static {
+        System.out.println("静态代码区执行成功");
+    }
+    /*
+    *punlic class 名称{
+    *   static{静态代码区的内容}  }
+    * 特点：第一次用到本类时   静态代码块执行唯一的一次
+    *静态内容总是优先于非动态所以优先执行
+    *静态代码区的经典用法：用来一次性的对静态成员变量进行赋值
+    * */
+
+
     private String name;
     private int id ;
     private int age ;
