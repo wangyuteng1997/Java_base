@@ -24,6 +24,7 @@ public class Phone {
     }
 
 //    这里是创建一个构造器，构造器没有返回的类型并且名称和类的名称一致，主要是对类中的参数进行赋值
+
     public Phone (){
     }
     public Phone (String brand,double price,String color){
@@ -31,6 +32,12 @@ public class Phone {
         this.price=price;
         this.color=color;
     }
+//重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。
+//
+//每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。
+//
+//最常用的地方就是构造器的重载。
+
 
     public void call(String who){
         System.out.println("给"+ who +"打电话");
