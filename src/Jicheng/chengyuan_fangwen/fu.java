@@ -6,7 +6,7 @@ package Jicheng.chengyuan_fangwen;
  */
 public class fu {
     public int num_fu = 50;
-    public  int num = 100;
+    public  int num = 10;
 
     public void methodfu(){
         System.out.println(num);
