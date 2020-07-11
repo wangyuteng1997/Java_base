@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Demo01_4student {
     public static void main(String[] args) {
+
         ArrayList<Student> list = new ArrayList<>();
         Student one = new Student("A",10);
 //        z这里因为Student类中的name和age都是private类型，赋值只能通过初始化和setter的形式赋值

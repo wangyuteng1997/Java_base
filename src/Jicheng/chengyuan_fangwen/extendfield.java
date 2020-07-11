@@ -18,6 +18,8 @@ public class extendfield {
         System.out.println(zi.num);
 //      优先子类的num，没有的话去父类找
 
+
+        
         zi.methodzi();
 
 
