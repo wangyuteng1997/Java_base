@@ -14,6 +14,18 @@ public class zi_override extends fu{
     public int num_zi =200;
     public  int num = 20;
     public  String A = "1";
+
+    public zi_override(){
+//        隐含一个super（）调用父类的构造方法“父类无参构造“
+//        如果这里要调用父类的有参构造:
+
+        super(10);
+//        super();
+//        首先只有子类构造才能调用父类构造方法，第二只能调用一个父类构造方法，并且只有第一个有效
+        System.out.println("子类构造方法");
+    }
+
+
     public void methodzi(){
         int num = 30;
         System.out.println(num);
