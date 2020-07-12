@@ -12,4 +12,12 @@ public class fu {
         System.out.println(num);
     }
 
+    public Object method(){
+      return num;
+    }
+
+    public void show(){
+        System.out.println("父类的方法");
+    }
+
 }

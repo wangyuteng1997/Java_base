@@ -10,7 +10,7 @@ public class extendfield {
         System.out.println(fu.num);
         System.out.println(fu.num_fu);
 
-        zi zi = new zi();
+        zi_override zi = new zi_override();
         System.out.println(zi.num);
         System.out.println(zi.num_zi);
         System.out.println(zi.num_fu);
@@ -19,7 +19,7 @@ public class extendfield {
 //      优先子类的num，没有的话去父类找
 
 
-        
+
         zi.methodzi();
 
 
