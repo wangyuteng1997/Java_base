@@ -24,6 +24,8 @@ public class fu {
       return num;
     }
 
+
+
     public void show(){
         System.out.println("父类的方法");
     }
