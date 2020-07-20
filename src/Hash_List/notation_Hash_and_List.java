@@ -11,7 +11,7 @@ import java.util.*;
 * Collection是最基本集合接口，它定义了一组允许重复的对象。Collection接口派生了两个子接口Set(Hashset)和List(Linklist和ArrayList)
 *Map接口下含有HashMap和TreeMap
 * */
-public class notation_Hash_and_List {
+public class      notation_Hash_and_List {
     public static void main(String[] args) {
 
         // 1. initialize the hash set

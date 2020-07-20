@@ -10,9 +10,9 @@ package Static;
 * */
 public class Need {
     public static void main(String[] args) {
-        Need.H();
+        H();
         Need.H2();
-//        对于public static的方法来说来说，使用改方法直接就是 类.方法名 不论在这个class还是别的class都能够使用
+//        对于public static的方法来说来说，在本class中方法直接就是 方法名或者类.方法名 ，，别的class使用该方法是类.方法名
 //        对于public private static的方法来说来说，使用改方法直接就是 类.方法名 但是只能在当前的class使用
 
         Need N = new Need();
@@ -32,6 +32,7 @@ public class Need {
 
     public void H1(){
         System.out.println("1");
+        H();
     }
 
     private void H3(){
