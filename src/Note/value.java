@@ -11,10 +11,6 @@ public class value {
 //   没有static的话  使用  先创建一个对象，通过这个对象使用这个变量
     static String country;
 //    （defaut) static String country; 如果没有修饰符一律默认为defaut
-    private static int idCounter = 0;
-    //如果有数据需要被共享给所有对象使用时，那么就可以使用static修饰
-//千万不要为了方便访问数据而使用static修饰成员变量，只有成员变量的数据是真正需要被共享的时候
-//才使用static修饰，这里不同的student对象共享同一个idCounter（这才是共享的意思）
 
     protected double price;
     //    同一包中的同一类和不同类  不同包的子类
@@ -29,9 +25,14 @@ public class value {
      String T;
      //这里默认是default，可以同一包的同一类和不同类
      //这里的default和几口的default不一样，接口的default是为了  在进行接口扩展的时候不会破坏于接口相关的代码
+//--------------------------------------------
+     //如果有数据需要被共享给所有对象使用时，那么就可以使用static修饰
+    private static int idCounter = 0;//这里不同的student对象共享同一个idCounter（这才是共享的意思）
+    public static int idCounter1 = 0;//两个对象是都能在其他类调用改被对象共享的成员变量
+    //千万不要为了方便访问数据而使用static修饰成员变量，只有成员变量的数据是真正需要被共享的时候
 
     public static final int NUM_OF_CL_ASS = 10;
-     //final这里是常量，不能更改
+     //1.final这里是常量，不能更改  2.在接口中会使用
 
 
     /*-----------------------------------------------------------------------------------*/
