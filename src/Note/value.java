@@ -6,7 +6,7 @@ package Note;
  */
 public class value {
 //    格式:
-//   修饰符（public，private，defaut，protected）+static（可以加也可以不加）+数据类型（int，String，double...)+数据名称
+//   修饰符（public，private，defaut，protected）+【static】+【final】数据类型（int，String，double...)+数据名称
 //   加上static表示这个成员变量已经和对象没有关系，是属于类的，使用的时候  类名+数据名称
 //   没有static的话  使用  先创建一个对象，通过这个对象使用这个变量
     static String country;
@@ -14,7 +14,7 @@ public class value {
     private static int idCounter = 0;
     //如果有数据需要被共享给所有对象使用时，那么就可以使用static修饰
 //千万不要为了方便访问数据而使用static修饰成员变量，只有成员变量的数据是真正需要被共享的时候
-//才使用static修饰，这里的idcounter相当于一个计数器，每次初始化给student容器分配一个id，可以给不同的student对象分配不同的id值
+//才使用static修饰，这里不同的student对象共享同一个idCounter（这才是共享的意思）
 
     protected double price;
     //    同一包中的同一类和不同类  不同包的子类
@@ -29,6 +29,10 @@ public class value {
      String T;
      //这里默认是default，可以同一包的同一类和不同类
      //这里的default和几口的default不一样，接口的default是为了  在进行接口扩展的时候不会破坏于接口相关的代码
+
+    public static final int NUM_OF_CL_ASS = 10;
+     //final这里是常量，不能更改
+
 
     /*-----------------------------------------------------------------------------------*/
     /*===================================================================================*/
@@ -51,7 +55,6 @@ public class value {
         D1();
     }
 
-
     /*===========private=============*/
     /*这里public和private的区别就是能否在其他类使用*/
 //    对于private static的方法来说来说，只能在本class中方法直接使用方法名调用
@@ -63,7 +66,15 @@ public class value {
 *
 * 2.静态私有化方法解决多个静态方法之间的重复代码的问题
 *private static 返回值类型 方法名称（参数列表）{方法体}
-*  */
+*
+* /*===========abstract=============*/
+/*抽象方法一般用在抽象类和接口里面
+** 【public】【abstract】 返回值类型 方法名称（参数列表）
+*注意实现类必须覆盖重写接口所有的抽象方法，除非实现类是抽象类
+* 抽象方法需要子类继承实现（覆盖），所以通过实现类可以实现该方法
+*
+* */
+
     /*===========Main方法================*/
     public static void main(String[] args) {
         /*===========public=============*/

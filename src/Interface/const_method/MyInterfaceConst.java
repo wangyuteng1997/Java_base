@@ -10,5 +10,7 @@ package Interface.const_method;
 *public static final 数据类型 常量名称 =数据类型
 * */
 public class MyInterfaceConst {
-    public MyInterfaceConst(){}
+    public static void main(String[] args) {
+        System.out.println(Myinterface.NUM_OF_CL_ASS);
+    }
 }
