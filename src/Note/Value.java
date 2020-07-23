@@ -4,7 +4,7 @@ package Note;
  * @author wang yuteng
  * @data 2020/7/22 12:39
  */
-public class value {
+public class Value {
 //    格式:
 //   修饰符（public，private，defaut，protected）+【static】+【final】数据类型（int，String，double...)+数据名称
 //   加上static表示这个成员变量已经和对象没有关系，是属于类的，使用的时候  类名+数据名称
@@ -80,7 +80,7 @@ public class value {
     public static void main(String[] args) {
         /*===========public=============*/
         A();
-        value value = new value();
+        Value value = new Value();
         value.A1();
         /*===========private=============*/
         D();
