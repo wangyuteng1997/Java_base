@@ -8,7 +8,7 @@ package Note;
 * extends继承或者implements实现，是多态的前提
 *比如学生类继承了人类类，那么这个实现类既有学生形态也有人类形态这就是多态
 *
-*
+*interface中默认的方法是抽象方法，没有方法体，需要子类重写
 *
 * */
 public class Base {

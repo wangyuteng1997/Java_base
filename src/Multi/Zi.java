@@ -1,4 +1,4 @@
-package Polymorphism;
+package Multi;
 
 /**
  * @author wang yuteng
@@ -9,5 +9,8 @@ public class Zi extends Fu {
     @Override
     public void method() {
         System.out.println("这是一个子类方法");
+    }
+    public void methodZi(){
+
     }
 }

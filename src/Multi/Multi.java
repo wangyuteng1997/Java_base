@@ -1,4 +1,4 @@
-package Polymorphism;
+package Multi;
 
 /**
  * @author wang yuteng
@@ -12,6 +12,18 @@ package Polymorphism;
 * 或者：
 * 接口名称 对象名 = new 实现类名称
 * */
+    /*如果不用多态只用子类
+    * teacher one = new teacher；
+    * one.work()；
+    * assiatant two = new assitant；
+    * two.wrok()
+    * 唯一做的事情就是调用work方法，其他不担心
+    *
+    * 如果使用多态的方法，对比一下
+    * emplyee one = new teacher；
+    * emplyee two = new assistant；
+    *好处：无论右边new的时候换成哪个子类对象，等号左边调用方法都不会变化
+    * */
 public class Multi {
     public static void main(String[] args) {
         /*--------------------------------------------------------*/
@@ -19,10 +31,16 @@ public class Multi {
         Fu obj = new Zi();
 //    左侧父类的引用，指向了右侧子类的对象，看等号右边是谁，优先用谁，没有则自动向上寻找
         obj.method();
-        obj.methodfu();
-//    相同的方法优先使用子类的，如果子类没有去父类中去寻找
+
+//        Fu obj = new Zi();编译看左边，运行看右边
+          obj.methodfu();
+          //methodfu是父类，左边编译通过，但是右边子类中没有对应的方法，就去父类中寻找    相同的方法优先使用子类的，如果子类没有去父类中去寻找
+//        obj.methodZi();错误用法
+//        因为obj是父类对象的，methodZi是子类中的，所以左边编译不通过
+/**所以只有子类重写的时候才会看子类的方法，否则都是看父类的方法*/
 
 /*-----------------------------------------------------------*/
+
 //        使用多态访问成员变量的方法
 /*1.直接通过对象名称访问成员变量，看等号左边是谁，优先用谁，没有则自动向上寻找
 *2.间接通过成员方法访问成员变量，看该方法属于谁，优先用谁，没有则向上寻找

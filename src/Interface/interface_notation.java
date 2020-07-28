@@ -57,5 +57,6 @@ public class interface_notation {
 //        创建实现类的对象使用
         interface_my_abstractImpl imp = new interface_my_abstractImpl();
         imp.methodAbs();
+        imp.methodAbs4();
     }
 }

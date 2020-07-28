@@ -1,4 +1,4 @@
-package Polymorphism;
+package Multi;
 
 /**
  * @author wang yuteng

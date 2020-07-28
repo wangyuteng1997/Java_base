@@ -22,6 +22,7 @@ public interface Interface_my_abstract {
 
     void methodAbs3();
 
+
 //    以上地中都是接口中的抽象方法的表示方法
 
 }
