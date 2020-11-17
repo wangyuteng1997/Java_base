@@ -21,7 +21,7 @@ public class Demo_stringconvert {
 
 //        转换成字节数组
         byte[] bytes = "abc".getBytes();
-
+        System.out.println(bytes[0]);
 //        字符串的中的字符的替换
         String str4 = "How do you do?";
         str4.replace("how","?");
