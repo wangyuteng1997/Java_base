@@ -15,7 +15,7 @@ public class      notation_Hash_and_List {
     public static void main(String[] args) {
 
         // 1. initialize the hash set
-        HashSet<String> hashSet = new HashSet<String>();
+        HashSet<String> hashSet = new HashSet  <String>();
 
         Set<String> hashset = new HashSet<>();
 

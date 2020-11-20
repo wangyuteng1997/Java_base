@@ -22,6 +22,6 @@ public class throws_try_catch {
             System.err.println("非数据类型不能转换");
         }
     }
-
+//csdn 解释链接：https://blog.csdn.net/hhy62011980/article/details/5548278
 
 }
