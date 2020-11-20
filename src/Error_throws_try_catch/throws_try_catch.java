@@ -23,5 +23,6 @@ public class throws_try_catch {
         }
     }
 //csdn 解释链接：https://blog.csdn.net/hhy62011980/article/details/5548278
+//    http://c.biancheng.net/view/1049.html
 
 }
