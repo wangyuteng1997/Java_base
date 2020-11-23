@@ -31,7 +31,7 @@ public interface MyinterfacePrivate1 {
         System.out.println("AAA");
     }*/
 //因为defaut是后面的  实现类 都能继承该方法（直接用）methodcommun   对象.methodcommun在psvm中实现
-    private void methodcommun(){
+    static void methodcommun(){
         System.out.println("AAA");
         System.out.println("AAA");
         System.out.println("AAA");

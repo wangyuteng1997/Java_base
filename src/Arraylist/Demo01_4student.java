@@ -21,5 +21,14 @@ public class Demo01_4student {
             Student student = list.get(i);
             System.out.println("姓名 ： =" + student.getName() + "," + "年龄 ：=" + student.getAge() );
         }
+//        这里只有数组，字符串数组等求长度时使用length，泛型集合时使用size的
+//        String []list={"ma","cao","yuan"};
+//    String a="macaoyuan";
+//    System.out.println(list.length);
+//    System.out.println(a.length());
+//    List array=new ArrayList();
+//    array.add(a);
+//    System.out.println(array.size());
+//        输出为 3 9 1
     }
 }
